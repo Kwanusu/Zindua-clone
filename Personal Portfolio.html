@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equi="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            My Personal Portfolio
+        </title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="portfolio.js"> </script>
+    <script src="https://kit.fontawesome.com/7adf3be8fa.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+       <div id="header">
+            <div class="container">
+                <nav>
+                    <i class="logo"><img src="logo.png"></i>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+            </div>    
+            <div class="header-text">
+                    <p>The IT Guru</p>
+                    <h1>Hello, I'm <span> Kwanusu.</span><br>Welcome to Innovet Tech</h1>
+            </div>
+        </div>
+       <!-- ............about......... -->
+       <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="myself at work.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I am a software engineer at your service. I hold a masters degree in software engineering and deal with web design, networking and software development</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/IOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2021-current</span><br>UI/UX Design Training at Zindua School</li>
+                            <li><span>2019-2021</span><br>Team leader at Safaricom Kenya Ltd </li>
+                            <li><span>2017-2019</span><br>Internship at Royal Media Services</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2016</span><br>UI/UX Desssign Training at Moringa Institute</li>
+                            <li><span>2016</span><br>MBA from UON.</li>
+                            <li><span>2014</span><br>BBA from University of India.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+ <!--...........services........... -->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My services</h1>
+                <div class="services-list">
+                    <div>
+                        <h2>Web Design</h2>
+                        <p>Dealing in both frontend and backend Web design</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <h2>UI/UX Design</h2>
+                        <p>Dealing in Android/IOS app interfaces</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <h2>App Design</h2>
+                        <p>Dealing in user friendly apps that suits your desire and expection</p>
+                        <a href="#">learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ..............portfolio............. -->
+        <div id="portfolio">
+            <div class="container"> 
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                <div class="work">
+                    <img src="my work 1.jpg">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Make the world a global village. Connect on the go. Download it from play store.</p>
+                        <a href="#"><i class="fa-sharp fa-regular fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="my wrk2.jpg">
+                        <div class="layer">
+                            <h3>Online Shopping App</h3>
+                            <p>Do your shopping at the cormfort of your home. Download it from play store.</p>
+                            <a href="#"><i class="fa-sharp fa-regular fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="my work 2.jpg">
+                        <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Enjoy every music on the go. Download it from play store.</p>
+                        <a href="#"><i class="fa-sharp fa-regular fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <a href="#" class="btn1">See more</a>
+            </div>
+        </div>
+        </body>
+        <!-- ...........contact.......... -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1  class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i>kwanusujoseph@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>+254725439354</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.twitter.com/@kwanusujoseph"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="https://wa.me/+254725439354"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                        <a href="my cv.jpg" download class="btn btn2">Download Cv</a>
+                    </div>
+                </div>
+                <div class="contact-write">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                    <span id="msg"></span>  
+            </div>
+        </div>
+    <footer>
+        <div class="copyright">
+            <p>Copyright  <i class="fa-regular fa-copyright"></i>2024. All Rights reserved by Innovettech</p>
+        </div>
+    </footer>
+<!--
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+            for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        } 
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right ="0";
+        }
+        function closemenu(){
+            sidemenu.style.right ="-200px";
+        }
+        const scriptURL = 'https://script.google.com/macros/s/'
+        const form =documents.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                  msg.innerHTML = ""  
+                },5000)
+                form.reset()
+            })
+            form.reset()
+            .catch(error => console.error('Error!', error.message))
+        })
+        alert('HELLO AND WELCOME TO INNOVET TECHNOLOGIES LIMITED');
+    </script> -->
+</html>
